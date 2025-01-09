@@ -17,9 +17,7 @@ export default function Home() {
       <button onClick={increment}>+ 1</button>
       <button onClick={decrement}>- 1</button>
     
-      {
-        width < breakPoint ? console.log('Mobile') : console.log('Desktop')
-      }
+      <p>{width < breakPoint ? 'Mobile' : 'Desktop'}</p>
       {
        <p>Du er: {online ? 'Online' : 'Offline'}</p>
       }
